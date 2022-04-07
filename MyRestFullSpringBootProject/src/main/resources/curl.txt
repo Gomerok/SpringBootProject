@@ -1,0 +1,14 @@
+#GET User
+curl -X GET http://localhost:8080/api/users
+
+#GET All User
+curl -X GET http://localhost:8080/api/users/{'40288fd58003fba3018003fbd1e70666'}
+
+#POST User
+curl -v -X POST -H "Content-Type: application/json" -H "Accept: application/json" -d '{"login":"Danila","email":"danila@gmail.com","password":"password"}' http://localhost:8080/api/users
+
+#PUT User
+curl -X PUT -H "Content-Type: application/json" -d '{"login":"Jon"}' http://localhost:8080/api/user/{'40288fd58003fba3018003fbd1e70000'}
+
+#DELETE User
+$ curl -X DELETE http://localhost:8080/api/users/{'40288fd58003fba3018003fbd1e70000'}
